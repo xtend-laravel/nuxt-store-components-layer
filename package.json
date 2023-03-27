@@ -13,6 +13,11 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "0.34.0",
+    "@nuxtjs/i18n": "8.0.0-beta.7",
+    "@pinia/nuxt": "0.4.6",
+    "@sidebase/nuxt-session": "^0.2.7",
+    "@vueuse/core": "^9.12.0",
+    "@vueuse/nuxt": "9.10.0",
     "eslint": "^8.34.0",
     "nuxt": "^3.0.0",
     "prettier": "^2.8.4",
