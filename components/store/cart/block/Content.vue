@@ -1,9 +1,7 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
-import Items from './Items.vue'
 import { useCartStore } from '#nuxt-store-core/store/cart'
 import { useExtendedCartStore } from '~/store/cart'
-import Header from '~/components/store/cart/Header.vue'
 const cartStore = useExtendedCartStore()
 const { isCartEmpty, items, totals } = useCartStore()
 const { formatPrice } = useFormattedPrice('EUR')
@@ -29,7 +27,7 @@ const getFormattedPrice = (price: Ref<number> | number): string => {
         </div>
       </slot>
       <slot name="override-items">
-        <Items />
+        <StoreCartItems />
       </slot>
     </div>
   </section>

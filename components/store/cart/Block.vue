@@ -1,8 +1,4 @@
 <script setup lang="ts">
-import Header from './BlockHeader.vue'
-import Content from './Content.vue'
-import Footer from './BlockFooter.vue'
-
 interface BlockProps {
   classes: {
     wrapper: string
@@ -28,11 +24,11 @@ withDefaults(defineProps<BlockProps>(), {
           <Header heading="Cart summary" />
         </slot>
         <slot name="override-content">
-          <Content />
+          <StoreCartBlockContent />
         </slot>
       </div>
       <slot name="override-footer">
-        <Footer />
+        <StoreCartBlockFooter />
       </slot>
     </div>
   </div>
