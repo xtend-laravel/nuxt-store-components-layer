@@ -2,7 +2,7 @@
 import Summary from './standard/Summary.vue'
 import ProgressBar from './elements/ProgressBar.vue'
 import Header from './elements/Header.vue'
-import Accordion from './standard/Accordion.vue'
+import Panels from './standard/Panels.vue'
 import EmptyCart from './elements/EmptyCart.vue'
 import Connection from './elements/Connection.vue'
 import Addresses from './elements/Addresses.vue'
@@ -83,8 +83,8 @@ checkoutStore.setCurrentStep(0)
       </slot>
       <div class="flex flex-wrap">
         <div :class="leftColumnClasses">
-          <slot name="accordion">
-            <Accordion />
+          <slot name="panels">
+            <Panels />
           </slot>
         </div>
         <div :class="rightColumnClasses">

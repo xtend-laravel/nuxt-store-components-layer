@@ -11,8 +11,13 @@
     "lint": "eslint .",
     "postinstall": "nuxt prepare"
   },
+  "dependencies": {
+    "vue-collapsed": "^1.1.2"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "0.34.0",
+    "@iconify-json/carbon": "^1.1.15",
+    "@iconify-json/feather": "^1.1.4",
     "@nuxtjs/i18n": "8.0.0-beta.7",
     "@pinia/nuxt": "0.4.6",
     "@sidebase/nuxt-session": "^0.2.7",
@@ -21,6 +26,7 @@
     "eslint": "^8.34.0",
     "nuxt": "^3.0.0",
     "prettier": "^2.8.4",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "unplugin-icons": "^0.15.3"
   }
 }

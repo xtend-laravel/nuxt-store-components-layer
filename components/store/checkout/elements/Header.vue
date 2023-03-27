@@ -5,7 +5,5 @@ defineProps<{
 </script>
 
 <template>
-  <div>
-    <h1 class="text-2xl font-bold uppercase" v-text="heading" />
-  </div>
+  <h1 class="text-2xl font-bold uppercase" v-text="heading" />
 </template>
