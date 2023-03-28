@@ -23,7 +23,7 @@ const handleAccordion = (step: any): void => {
           <slot name="panel-header" :step="step" :current-step="currentStep" :handle-accordion="handleAccordion">
             <PanelHeader :step="step" :current-step="currentStep" @accordion="handleAccordion" />
           </slot>
-          <slot name="panel-content">
+          <slot name="panel-content" :step="step" :current-step="currentStep">
             <PanelContent :step="step" :current-step="currentStep" />
           </slot>
         </div>
@@ -31,9 +31,3 @@ const handleAccordion = (step: any): void => {
     </template>
   </div>
 </template>
-
-<style>
-.v-collapse {
-  transition: height var(--vc-auto-duration) cubic-bezier(0.33, 1, 0.68, 1);
-}
-</style>
