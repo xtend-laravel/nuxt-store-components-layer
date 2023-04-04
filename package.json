@@ -14,21 +14,21 @@
   "dependencies": {
     "@nuxtjs/i18n": "8.0.0-beta.10",
     "nuxt-store-core-app": "github:xtend-laravel/nuxt-store-core-app",
-    "nuxt-swiper": "^1.0.1",
+    "nuxt-swiper": "^1.1.0",
     "vue-collapsed": "^1.1.2"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "0.34.0",
-    "@iconify-json/carbon": "^1.1.15",
+    "@antfu/eslint-config": "0.38.4",
+    "@iconify-json/carbon": "^1.1.16",
     "@iconify-json/feather": "^1.1.4",
-    "@pinia/nuxt": "0.4.6",
+    "@pinia/nuxt": "0.4.7",
     "@sidebase/nuxt-session": "^0.2.7",
-    "@vueuse/core": "^9.12.0",
-    "@vueuse/nuxt": "9.10.0",
-    "eslint": "^8.34.0",
-    "nuxt": "^3.0.0",
-    "prettier": "^2.8.4",
-    "typescript": "^4.9.5",
-    "unplugin-icons": "^0.15.3"
+    "@vueuse/core": "^9.13.0",
+    "@vueuse/nuxt": "9.13.0",
+    "eslint": "^8.37.0",
+    "nuxt": "^3.3.3",
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.3",
+    "unplugin-icons": "^0.16.1"
   }
 }
