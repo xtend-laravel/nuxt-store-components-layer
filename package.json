@@ -12,6 +12,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "nuxt-swiper": "^1.0.1",
     "vue-collapsed": "^1.1.2"
   },
   "devDependencies": {

@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
-import { CheckoutStep } from '#nuxt-store-core/types/checkout'
 import { useCheckoutStore } from '#nuxt-store-core/store/checkout'
 import usePersistForm from '#nuxt-store-core/composables/usePersistForm'
 import IconEdit from '~icons/carbon/edit'
@@ -40,7 +39,6 @@ const toggleBillingStep = () => {
 </script>
 
 <template>
-  {{ formExcludingFields }}
   <Swiper
     class="swiper-cards"
     :modules="[SwiperAutoplay, SwiperNavigation, SwiperEffectCards, SwiperPagination]"
@@ -50,7 +48,7 @@ const toggleBillingStep = () => {
     :pagination="true"
   >
     <SwiperSlide v-for="address in addresses" :key="address.id">
-      <section class="shadow-3xl group border-base rounded bg-gray-50 hover:bg-white">
+      <section class="shadow-3xl border-base group rounded bg-gray-50 hover:bg-white">
         <address class="relative h-48 p-4 text-sm not-italic">
           <h4 class="mb-4 font-medium">Address {{ address.id }}</h4>
           <input
