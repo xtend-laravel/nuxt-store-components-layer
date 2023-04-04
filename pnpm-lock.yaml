@@ -4,7 +4,6 @@ specifiers:
   '@antfu/eslint-config': 0.34.0
   '@iconify-json/carbon': ^1.1.15
   '@iconify-json/feather': ^1.1.4
-  '@nuxt/kit': ^3.3.3
   '@nuxtjs/i18n': 8.0.0-beta.10
   '@pinia/nuxt': 0.4.6
   '@sidebase/nuxt-session': ^0.2.7
@@ -20,8 +19,8 @@ specifiers:
   vue-collapsed: ^1.1.2
 
 dependencies:
-  '@nuxt/kit': 3.3.3
-  nuxt-store-core-app: github.com/xtend-laravel/nuxt-store-core-app/322133cdd84c3a5d873228a57eead90a44e34fcf_typescript@4.9.5
+  '@nuxtjs/i18n': 8.0.0-beta.10
+  nuxt-store-core-app: github.com/xtend-laravel/nuxt-store-core-app/459c72b2019e851865c8611eb1b0687324713d54_typescript@4.9.5
   nuxt-swiper: 1.0.1
   vue-collapsed: 1.1.2
 
@@ -29,7 +28,6 @@ devDependencies:
   '@antfu/eslint-config': 0.34.0_vgl77cfdswitgr47lm5swmv43m
   '@iconify-json/carbon': 1.1.16
   '@iconify-json/feather': 1.1.4
-  '@nuxtjs/i18n': 8.0.0-beta.10
   '@pinia/nuxt': 0.4.6_typescript@4.9.5
   '@sidebase/nuxt-session': 0.2.7
   '@vueuse/core': 9.13.0
@@ -1014,7 +1012,7 @@ packages:
       source-map: 0.6.1
       vue-i18n: 9.3.0-beta.16
       yaml-eslint-parser: 0.3.2
-    dev: true
+    dev: false
 
   /@intlify/core-base/9.3.0-beta.14-77e850b:
     resolution: {integrity: sha512-Eb8CeN+s/Och1whMLzW8ds1dkYgEuu5Vf26IYz+GVYstx1rPICnh5HNvgTyQvQMUsvVei5ujz2gx/LcPxxRymQ==}
@@ -1034,7 +1032,7 @@ packages:
       '@intlify/message-compiler': 9.3.0-beta.16
       '@intlify/shared': 9.3.0-beta.16
       '@intlify/vue-devtools': 9.3.0-beta.16
-    dev: true
+    dev: false
 
   /@intlify/devtools-if/9.3.0-beta.14-77e850b:
     resolution: {integrity: sha512-Misf4UDGi9vyUONXIAhcSAIb8n6bBYNfuezLQxwgnVDrJk0GacKQG38GW231QE9OgLvmUmC+WGbq7LTZo/pCpA==}
@@ -1048,7 +1046,7 @@ packages:
     engines: {node: '>= 14'}
     dependencies:
       '@intlify/shared': 9.3.0-beta.16
-    dev: true
+    dev: false
 
   /@intlify/message-compiler/9.3.0-beta.14-77e850b:
     resolution: {integrity: sha512-MF7EdnBoKo21Unf8rDy37KEhRzcbPlel+FTD7VR+EzzMgk4R/sMtICnMgDxS3Kl5FS9tLdHlNF0Qbuxc6+NNmg==}
@@ -1064,7 +1062,7 @@ packages:
     dependencies:
       '@intlify/shared': 9.3.0-beta.16
       source-map: 0.6.1
-    dev: true
+    dev: false
 
   /@intlify/message-compiler/9.3.0-beta.17:
     resolution: {integrity: sha512-i7hvVIRk1Ax2uKa9xLRJCT57to08OhFMhFXXjWN07rmx5pWQYQ23MfX1xgggv9drnWTNhqEiD+u4EJeHoS5+Ww==}
@@ -1072,6 +1070,7 @@ packages:
     dependencies:
       '@intlify/shared': 9.3.0-beta.17
       source-map: 0.6.1
+    dev: false
 
   /@intlify/shared/9.3.0-beta.10:
     resolution: {integrity: sha512-h93uAanbAt/XgjDHclrVB7xix6r7Uz11wx0iGNOCdHP7aA2LCJjUT3uNbekJjjbo+Fl5jzTSJZdm2SexzoqhRA==}
@@ -1086,11 +1085,12 @@ packages:
   /@intlify/shared/9.3.0-beta.16:
     resolution: {integrity: sha512-kXbm4svALe3lX+EjdJxfnabOphqS4yQ1Ge/iIlR8tvUiYRCoNz3hig1M4336iY++Dfx5ytEQJPNjIcknNIuvig==}
     engines: {node: '>= 14'}
-    dev: true
+    dev: false
 
   /@intlify/shared/9.3.0-beta.17:
     resolution: {integrity: sha512-mscf7RQsUTOil35jTij4KGW1RC9SWQjYScwLxP53Ns6g24iEd5HN7ksbt9O6FvTmlQuX77u+MXpBdfJsGqizLQ==}
     engines: {node: '>= 14'}
+    dev: false
 
   /@intlify/unplugin-vue-i18n/0.8.2_pnpokcjcqv6os2ag6wb47ha5cu:
     resolution: {integrity: sha512-cRnzPqSEZQOmTD+p4pwc3RTS9HxreLqfID0keoqZDZweCy/CGRMLLTNd15S4TUf1vSBhPF03DItEFDr1F+8MDA==}
@@ -1154,7 +1154,7 @@ packages:
       vue-i18n: 9.3.0-beta.16
     transitivePeerDependencies:
       - supports-color
-    dev: true
+    dev: false
 
   /@intlify/vue-devtools/9.3.0-beta.14-77e850b:
     resolution: {integrity: sha512-QRznXFfu9UldQmE4kWj5VbfSFzT4y2Zh5xD9L2AJ8J/bhlLzbncMHDb3BOL6Xzczv5K6LhYDLdoVvW1n+z4tpA==}
@@ -1170,7 +1170,7 @@ packages:
     dependencies:
       '@intlify/core-base': 9.3.0-beta.16
       '@intlify/shared': 9.3.0-beta.16
-    dev: true
+    dev: false
 
   /@intlify/vue-i18n-bridge/0.8.0_pnpokcjcqv6os2ag6wb47ha5cu:
     resolution: {integrity: sha512-wQ18fSccm9QaWpUW2vq2QHvojgKIog7s+UMj9LeY3pUV3yD9bU4YZI+1PTNoX3tOA+BE71gQyqVGox/TVQKP6Q==}
@@ -1210,7 +1210,7 @@ packages:
         optional: true
     dependencies:
       vue-i18n: 9.3.0-beta.16
-    dev: true
+    dev: false
 
   /@intlify/vue-router-bridge/0.8.0:
     resolution: {integrity: sha512-CNxOgvyQcRhtGmRrksicL+HGjDijXtz+J/x04C/RslZ74CFdZkxjCe8MABkeD3xr+ry8G8tCm2nV2hLjZbynQw==}
@@ -1229,6 +1229,7 @@ packages:
       vue-demi: 0.13.11
     transitivePeerDependencies:
       - vue
+    dev: false
 
   /@ioredis/commands/1.2.0:
     resolution: {integrity: sha512-Sx1pU8EM64o2BrqNpEO1CNLtKQwyhuXuqyfH7oGKCk+1a33d2r5saW8zNwm3j6BTExtjrv2BxTgzzkMwts6vGg==}
@@ -1624,7 +1625,7 @@ packages:
       - vue
       - vue-i18n-bridge
       - vue-router
-    dev: true
+    dev: false
 
   /@nuxtjs/i18n/8.0.0-beta.7:
     resolution: {integrity: sha512-TH0cQz2XDSOdBsO3ZBjWC107IaPNTezPwDFPdUwCU0wCP7JfB1kwke4mkCLeizUijFbKTTlAsFnGkyyvQe7UmQ==}
@@ -2411,6 +2412,7 @@ packages:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
       acorn: 7.4.1
+    dev: false
 
   /acorn-jsx/5.3.2_acorn@8.8.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -2424,6 +2426,7 @@ packages:
     resolution: {integrity: sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==}
     engines: {node: '>=0.4.0'}
     hasBin: true
+    dev: false
 
   /acorn/8.8.2:
     resolution: {integrity: sha512-xjIYgE8HBrkpd/sJqOGNspf8uHG+NOHGOw6a/Urj8taM2EXfdNAH2oFcPeIFfsv3+kz/mJrS5VuMqbNLjCa2vw==}
@@ -4027,6 +4030,7 @@ packages:
       acorn: 7.4.1
       acorn-jsx: 5.3.2_acorn@7.4.1
       eslint-visitor-keys: 1.3.0
+    dev: false
 
   /espree/9.5.0:
     resolution: {integrity: sha512-JPbJGhKc47++oo4JkEoTe2wjy4fmMwvFpgJT9cQzmfXKp22Dr6Hf1tdCteLz1h0P3t+mGvWZ+4Uankvh8+c6zw==}
@@ -4876,6 +4880,7 @@ packages:
 
   /is-https/4.0.0:
     resolution: {integrity: sha512-FeMLiqf8E5g6SdiVJsPcNZX8k4h2fBs1wp5Bb6uaNxn58ufK1axBqQZdmAQsqh0t9BuwFObybrdVJh6MKyPlyg==}
+    dev: false
 
   /is-interactive/2.0.0:
     resolution: {integrity: sha512-qP1vozQRI+BMOPcjFzrjXuQvdak2pHNUMZoeG2eRbiSqyvbEf/wQtEOTOX1guk6E3t36RkaqiSt8A/6YElNxLQ==}
@@ -5008,6 +5013,7 @@ packages:
   /js-cookie/3.0.1:
     resolution: {integrity: sha512-+0rgsUXZu4ncpPxRL+lNEptWMOWl9etvPHc/koSRp6MPwpRYAhmk0dUG00J4bxVV3r9uUzfo24wW0knS07SKSw==}
     engines: {node: '>=12'}
+    dev: false
 
   /js-sdsl/4.4.0:
     resolution: {integrity: sha512-FfVSdx6pJ41Oa+CF7RDaFmTnCaFhua+SNYQX74riGOpl96x+2jQCqEfQ2bnXu/5DPCqlRuiqyvTJM0Qjz26IVg==}
@@ -5069,6 +5075,7 @@ packages:
       eslint-visitor-keys: 1.3.0
       espree: 6.2.1
       semver: 6.3.0
+    dev: false
 
   /jsonc-eslint-parser/2.2.0:
     resolution: {integrity: sha512-x5QjzBOORd+T2EjErIxJnkOEbLVEdD1ILEeBbIJt8Eq/zUn7P7M8qdnWiNVBK5f8oxnJpc6SBHOeeIEl/swPjg==}
@@ -8219,7 +8226,7 @@ packages:
       ufo: 1.1.1
       vue-demi: 0.13.11
       vue-i18n: 9.3.0-beta.16
-    dev: true
+    dev: false
 
   /vue-i18n/9.3.0-beta.14-77e850b:
     resolution: {integrity: sha512-Zjkzm7ZYhLfssuwSgJI9jq1agex7kPl7gEI18pw23+eWUisqy3q20lPP2xDFLmzhUYb3AoaDifj5z4U6+cvhHA==}
@@ -8243,7 +8250,7 @@ packages:
       '@intlify/shared': 9.3.0-beta.16
       '@intlify/vue-devtools': 9.3.0-beta.16
       '@vue/devtools-api': 6.5.0
-    dev: true
+    dev: false
 
   /vue-router/4.1.6_vue@3.2.47:
     resolution: {integrity: sha512-DYWYwsG6xNPmLq/FmZn8Ip+qrhFEzA14EI12MsMgVxvHFDYvlr4NXpVF5hrRH1wVcDP8fGi5F4rxuJSl8/r+EQ==}
@@ -8386,6 +8393,7 @@ packages:
       eslint-visitor-keys: 1.3.0
       lodash: 4.17.21
       yaml: 1.10.2
+    dev: false
 
   /yaml-eslint-parser/1.2.0:
     resolution: {integrity: sha512-OmuvQd5lyIJWfFALc39K5fGqp0aWNc+EtyhVgcQIPZaUKMnTb7An3RMp+QJizJ/x0F4kpgTNe6BL/ctdvoIwIg==}
@@ -8444,15 +8452,14 @@ packages:
       readable-stream: 3.6.2
     dev: true
 
-  github.com/xtend-laravel/nuxt-store-core-app/322133cdd84c3a5d873228a57eead90a44e34fcf_typescript@4.9.5:
-    resolution: {tarball: https://codeload.github.com/xtend-laravel/nuxt-store-core-app/tar.gz/322133cdd84c3a5d873228a57eead90a44e34fcf}
-    id: github.com/xtend-laravel/nuxt-store-core-app/322133cdd84c3a5d873228a57eead90a44e34fcf
+  github.com/xtend-laravel/nuxt-store-core-app/459c72b2019e851865c8611eb1b0687324713d54_typescript@4.9.5:
+    resolution: {tarball: https://codeload.github.com/xtend-laravel/nuxt-store-core-app/tar.gz/459c72b2019e851865c8611eb1b0687324713d54}
+    id: github.com/xtend-laravel/nuxt-store-core-app/459c72b2019e851865c8611eb1b0687324713d54
     name: nuxt-store-core-app
     version: 1.0.0
     engines: {node: ^16.11.0 || ^17.0.0 || || ^18.0.0}
     dependencies:
       '@malolebrin/pinia-entity-store': 0.2.4
-      '@nuxt/kit': 3.3.3
       '@nuxtjs/i18n': 8.0.0-beta.7
       '@nuxtjs/tailwindcss': 6.6.5
       '@pinia/nuxt': 0.4.6_typescript@4.9.5

@@ -12,7 +12,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.3.3",
+    "@nuxtjs/i18n": "8.0.0-beta.10",
     "nuxt-store-core-app": "github:xtend-laravel/nuxt-store-core-app",
     "nuxt-swiper": "^1.0.1",
     "vue-collapsed": "^1.1.2"
@@ -21,7 +21,6 @@
     "@antfu/eslint-config": "0.34.0",
     "@iconify-json/carbon": "^1.1.15",
     "@iconify-json/feather": "^1.1.4",
-    "@nuxtjs/i18n": "8.0.0-beta.10",
     "@pinia/nuxt": "0.4.6",
     "@sidebase/nuxt-session": "^0.2.7",
     "@vueuse/core": "^9.12.0",
