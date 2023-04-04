@@ -20,7 +20,7 @@
     "@antfu/eslint-config": "0.34.0",
     "@iconify-json/carbon": "^1.1.15",
     "@iconify-json/feather": "^1.1.4",
-    "@nuxtjs/i18n": "8.0.0-beta.7",
+    "@nuxtjs/i18n": "8.0.0-beta.10",
     "@pinia/nuxt": "0.4.6",
     "@sidebase/nuxt-session": "^0.2.7",
     "@vueuse/core": "^9.12.0",
