@@ -1,6 +1,3 @@
 {
-  "extends": "./.nuxt/tsconfig.json",
-  "compilerOptions": {
-    "lib": ["ES2021"]
-  }
+  "extends": "./.nuxt/tsconfig.json"
 }
