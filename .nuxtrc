@@ -1,1 +1,2 @@
-typescript.includeWorkspace = true
+shamefully-hoist=true
+strict-peer-dependencies=false
