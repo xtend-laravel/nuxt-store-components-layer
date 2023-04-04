@@ -12,7 +12,8 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "nuxt-store-core-app": "git+https://github.com/xtend-laravel/nuxt-store-core-app",
+    "@nuxt/kit": "^3.3.3",
+    "nuxt-store-core-app": "github:xtend-laravel/nuxt-store-core-app",
     "nuxt-swiper": "^1.0.1",
     "vue-collapsed": "^1.1.2"
   },
