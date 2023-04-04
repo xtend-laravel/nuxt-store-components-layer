@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
-import { useCartStore } from '#nuxt-store-core/store/cart'
+import { useCartStore } from 'nuxt-store-core-app/src/store/cart'
 import { useExtendedCartStore } from '~/store/cart'
 
 defineProps<{
@@ -21,7 +21,7 @@ const getFormattedPrice = (price: Ref<number> | number): string => {
 <template>
   <div class="relative shrink-0">
     <span
-      class="absolute top-1 left-1 flex h-6 w-6 items-center justify-center rounded-full border bg-white text-sm font-medium text-gray-500 shadow sm:-top-2 sm:-right-2"
+      class="absolute left-1 top-1 flex h-6 w-6 items-center justify-center rounded-full border bg-white text-sm font-medium text-gray-500 shadow sm:-right-2 sm:-top-2"
       v-text="item.quantity"
     />
     <img
@@ -45,7 +45,7 @@ const getFormattedPrice = (price: Ref<number> | number): string => {
       </div>
     </div>
 
-    <div class="absolute top-0 right-0 flex sm:bottom-0 sm:top-auto">
+    <div class="absolute right-0 top-0 flex sm:bottom-0 sm:top-auto">
       <button
         type="button"
         class="flex rounded p-2 text-center text-gray-500 transition-all duration-200 ease-in-out hover:text-gray-900 focus:shadow"

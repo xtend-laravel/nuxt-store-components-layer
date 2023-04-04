@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useCheckoutStore } from '#nuxt-store-core/store/checkout'
+import { useCheckoutStore } from 'nuxt-store-core-app/src/store/checkout'
 const props = withDefaults(
   defineProps<{
     step: any

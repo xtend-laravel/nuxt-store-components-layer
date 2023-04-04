@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
-import { useCheckoutStore } from '#nuxt-store-core/store/checkout'
-import usePersistForm from '#nuxt-store-core/composables/usePersistForm'
+import { useCheckoutStore } from 'nuxt-store-core-app/src/store/checkout'
+import usePersistForm from 'nuxt-store-core-app/src/composables/usePersistForm'
 import IconEdit from '~icons/carbon/edit'
 import IconTrash from '~icons/carbon/trash-can'
 import IconCheck from '~icons/carbon/checkmark-filled'
@@ -73,7 +73,7 @@ const toggleBillingStep = () => {
           <div v-text="address.zip_code" />
         </address>
         <footer
-          class="border-base flex items-center justify-start gap-4 border-l-0 border-b-0 border-r-0 px-4 py-4 text-sm font-medium text-neutral-600"
+          class="border-base flex items-center justify-start gap-4 border-b-0 border-l-0 border-r-0 px-4 py-4 text-sm font-medium text-neutral-600"
         >
           <a href="#" class="flex items-center gap-2"> <IconEdit class="h-4 w-4" /> Edit </a>
           <a href="#" class="flex items-center gap-2"> <IconTrash class="h-4 w-4" /> Delete </a>

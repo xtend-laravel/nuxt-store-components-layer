@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
-import { useCheckoutStore } from '#nuxt-store-core/store/checkout'
+import { useCheckoutStore } from 'nuxt-store-core-app/src/store/checkout'
 import IconCheck from '~icons/carbon/checkmark-filled'
 import ShippingIcon from '~icons/carbon/delivery-truck'
 const checkoutStore = useCheckoutStore()
@@ -12,7 +12,7 @@ const form: any = reactive({
 
 <template>
   <div v-for="shippingMethod in shippingMethods" :key="shippingMethod.identifier">
-    <section class="shadow-3xl group border-base my-4 rounded bg-gray-50 hover:bg-white">
+    <section class="shadow-3xl border-base group my-4 rounded bg-gray-50 hover:bg-white">
       <div class="relative p-4 text-sm not-italic">
         <div class="flex w-11/12 flex-row items-center">
           <ShippingIcon class="mr-4 h-10 w-10" />

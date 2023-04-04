@@ -2,7 +2,7 @@
 import { storeToRefs } from 'pinia'
 import PanelHeader from './panel/Header.vue'
 import PanelContent from './panel/Content.vue'
-import { useCheckoutStore } from '#nuxt-store-core/store/checkout'
+import { useCheckoutStore } from 'nuxt-store-core-app/src/store/checkout'
 
 const checkoutStore = useCheckoutStore()
 const { steps, currentStep } = storeToRefs(checkoutStore)

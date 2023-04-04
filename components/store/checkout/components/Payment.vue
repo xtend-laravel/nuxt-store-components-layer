@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { StripeCardElement } from '@stripe/stripe-js'
-import { useCartStore } from '#nuxt-store-core/store/cart'
+import { useCartStore } from 'nuxt-store-core-app/src/store/cart'
 const cartStore = useCartStore()
 const { $stripe } = useNuxtApp()
 const clientSecret = cartStore.meta?.stripe_client_secret || ''

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useCartStore } from '#nuxt-store-core/store/cart'
+import { useCartStore } from 'nuxt-store-core-app/src/store/cart'
 import { useExtendedCartStore } from '~/store/cart'
 const cartStore = useExtendedCartStore()
 const { items, totals } = useCartStore()
@@ -18,7 +18,7 @@ const getFormattedPrice = (price: Ref<number> | number): string => {
 </script>
 
 <template>
-  <div class="mt-6 space-y-3 border-t border-b py-8">
+  <div class="mt-6 space-y-3 border-b border-t py-8">
     <div class="flex items-center justify-between">
       <p class="text-gray-400" v-text="labels.subTotal" />
       <p class="text-lg font-semibold text-gray-900" v-text="getFormattedPrice(totals.sub_total)" />

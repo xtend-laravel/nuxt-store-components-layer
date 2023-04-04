@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
-import { ProductListLayout, useProductListStore } from '#nuxt-store-core/store/productList'
+import { ProductListLayout, useProductListStore } from 'nuxt-store-core-app/src/store/productList'
 import IconList from '~icons/carbon/list'
 import IconGrid from '~icons/carbon/grid'
 

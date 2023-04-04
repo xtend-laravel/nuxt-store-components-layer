@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
-import { useFilterStore } from '#nuxt-store-core/store/filters'
-import { useProductListStore } from '#nuxt-store-core/store/productList'
+import { useFilterStore } from 'nuxt-store-core-app/src/store/filters'
+import { useProductListStore } from 'nuxt-store-core-app/src/store/productList'
 const { items, countItems } = storeToRefs(useProductListStore())
 const productListStore = useProductListStore()
 const filterStore = useFilterStore()

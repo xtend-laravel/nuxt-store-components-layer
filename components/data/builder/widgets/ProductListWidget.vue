@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Widget } from '#nuxt-store-core/composables/useWidget'
+import { Widget } from 'nuxt-store-core-app/src/composables/useWidget'
 import useTempWidget from '@/composables/useTempWidget'
 
 const props = defineProps<{

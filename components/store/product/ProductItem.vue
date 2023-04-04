@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { useCartStore } from '#nuxt-store-core/store/cart'
-import { useCategoryStore } from '#nuxt-store-core/store/category'
-import { ProductListLayout } from '#nuxt-store-core/store/productList'
-import { useGlobalStore } from '#nuxt-store-core/store/global'
-import useProductRoute from '#nuxt-store-core/composables/useProductRoute'
+import { useCartStore } from 'nuxt-store-core-app/src/store/cart'
+import { useCategoryStore } from 'nuxt-store-core-app/src/store/category'
+import { ProductListLayout } from 'nuxt-store-core-app/src/store/productList'
+import { useGlobalStore } from 'nuxt-store-core-app/src/store/global'
+import useProductRoute from 'nuxt-store-core-app/src/composables/useProductRoute'
 import Badge from './Badge.vue'
 import IconEdit from '~icons/carbon/shopping-cart-plus'
 import IconFav from '~icons/carbon/favorite'
@@ -56,7 +56,7 @@ function addToFavorite(product: any) {
         />
         <!-- secondary image -->
         <div
-          class="absolute top-0 left-0 flex h-full w-full transform items-center opacity-0 transition duration-300 group-hover:opacity-100"
+          class="absolute left-0 top-0 flex h-full w-full transform items-center opacity-0 transition duration-300 group-hover:opacity-100"
         >
           <img
             v-if="product.attributes.images.gallery.length > 1"
@@ -70,20 +70,20 @@ function addToFavorite(product: any) {
         >
           <div class="mb-3 flex items-center gap-2">
             <button
-              class="rounded-full border border-transparent bg-brand-300 p-2 text-xxs font-medium uppercase text-white shadow-sm hover:bg-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2"
+              class="bg-brand-300 text-xxs hover:bg-brand-500 focus:ring-brand-500 rounded-full border border-transparent p-2 font-medium uppercase text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2"
               @click.prevent="addToCart(product)"
             >
               <IconView class="h-4 w-4" />
             </button>
             <button
-              class="rounded-full border border-transparent bg-brand-400 p-2 text-xxs font-medium uppercase text-white shadow-sm hover:bg-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2"
+              class="bg-brand-400 text-xxs hover:bg-brand-600 focus:ring-brand-500 rounded-full border border-transparent p-2 font-medium uppercase text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2"
               :class="isFavorite ? 'bg-rose-500' : ''"
               @click.prevent="!isFavorite && addToFavorite(product)"
             >
               <IconFav class="h-4 w-4" />
             </button>
             <button
-              class="rounded-full border border-transparent bg-brand-500 p-2 text-xxs font-medium uppercase text-white shadow-sm hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2"
+              class="bg-brand-500 text-xxs hover:bg-brand-700 focus:ring-brand-500 rounded-full border border-transparent p-2 font-medium uppercase text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2"
               @click.prevent="addToCart(product)"
             >
               <IconEdit class="h-4 w-4" />
@@ -92,7 +92,7 @@ function addToFavorite(product: any) {
         </div>
       </NuxtLink>
       <!-- badges -->
-      <div class="absolute top-0 left-0 ml-2 mt-2 flex items-center gap-2">
+      <div class="absolute left-0 top-0 ml-2 mt-2 flex items-center gap-2">
         <Badge class="bg-red-500"> On sale! </Badge>
         <Badge class="bg-black"> All sold out! </Badge>
       </div>
@@ -123,7 +123,7 @@ function addToFavorite(product: any) {
       <div class="my-3 flex items-center gap-2 text-sm">
         <template v-if="Math.round(Math.random())">
           <span class="text-gray-500 line-through" v-text="formattedPrice" />
-          <span class="rounded rounded bg-red-500 px-1 text-xxs font-medium text-white">-50%</span>
+          <span class="text-xxs rounded rounded bg-red-500 px-1 font-medium text-white">-50%</span>
         </template>
         <!-- current price -->
         <span class="text-brand-500" v-text="formattedDiscountedPrice" />

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
-import { useCheckoutStore } from '#nuxt-store-core/store/checkout'
+import { useCheckoutStore } from 'nuxt-store-core-app/src/store/checkout'
 const props = withDefaults(
   defineProps<{
     completedStepClasses?: string

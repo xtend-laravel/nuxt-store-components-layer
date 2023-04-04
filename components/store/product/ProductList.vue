@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useProductListStore } from '#nuxt-store-core/store/productList'
-import { useFilterStore } from '#nuxt-store-core/store/filters'
+import { useProductListStore } from 'nuxt-store-core-app/src/store/productList'
+import { useFilterStore } from 'nuxt-store-core-app/src/store/filters'
 import { storeToRefs } from 'pinia'
 
 const filterStore = useFilterStore()

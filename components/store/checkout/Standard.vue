@@ -8,8 +8,8 @@ import Connection from './components/Connection.vue'
 import Addresses from './components/Addresses.vue'
 import Shipping from './components/Shipping.vue'
 import Payment from './components/Payment.vue'
-import { useCartStore } from '#nuxt-store-core/store/cart'
-import { useCheckoutStore } from '#nuxt-store-core/store/checkout'
+import { useCartStore } from 'nuxt-store-core-app/src/store/cart'
+import { useCheckoutStore } from 'nuxt-store-core-app/src/store/checkout'
 
 const props = withDefaults(
   defineProps<{

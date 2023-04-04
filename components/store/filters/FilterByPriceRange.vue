@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useFilterStore } from '#nuxt-store-core/store/filters'
+import { useFilterStore } from 'nuxt-store-core-app/src/store/filters'
 import Slider from '@vueform/slider'
 const props = defineProps<{
   range: Range
@@ -60,10 +60,10 @@ watch(
   @apply relative z-0 h-full w-full overflow-hidden rounded;
 }
 .slider-connect {
-  @apply z-1 bg-blue transform-origin-0 transform-style-flat tap:transition-transform tap:duration-300 slider-disabled:cursor-not-allowed slider-disabled:bg-gray-400 absolute top-0 right-0 h-full w-full cursor-pointer;
+  @apply z-1 bg-blue transform-origin-0 transform-style-flat tap:transition-transform tap:duration-300 slider-disabled:cursor-not-allowed slider-disabled:bg-gray-400 absolute right-0 top-0 h-full w-full cursor-pointer;
 }
 .slider-origin {
-  @apply z-1 transform-origin-0 transform-style-flat h:h-0 v:-top-full v:w-0 txt-rtl-h:left-0 txt-rtl-h:right-auto tap:transition-transform tap:duration-300 absolute top-0 right-0 h-full w-full;
+  @apply z-1 transform-origin-0 transform-style-flat h:h-0 v:-top-full v:w-0 txt-rtl-h:left-0 txt-rtl-h:right-auto tap:transition-transform tap:duration-300 absolute right-0 top-0 h-full w-full;
 }
 .slider-handle {
   @apply shadow-slider h:-top-1.5 h:-right-2 h:h-4 h:w-4 v:-top-2 v:-right-1.25 v:h-4 v:w-4 txt-rtl-h:-left-2 txt-rtl-h:right-auto slider-disabled:cursor-not-allowed absolute cursor-grab rounded-full border-0 bg-white focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-30;
@@ -72,7 +72,7 @@ watch(
   @apply h-full w-full;
 }
 .slider-tooltip {
-  @apply min-w-5 bg-blue h:left-1/2 h:-translate-x-1/2 v:top-1/2 v:-translate-y-1/2 merge-h:left-auto merge-h:translate-x-1/2 merge-v:top-auto merge-v:-translate-x-4 slider-disabled:border-gray-400 slider-disabled:bg-gray-400 tt-focus:hidden tt-focused:block tt-drag:hidden tt-dragging:block absolute block transform whitespace-nowrap rounded border border-blue-400 py-1 px-1.5 text-center text-xs font-medium text-white;
+  @apply min-w-5 bg-blue h:left-1/2 h:-translate-x-1/2 v:top-1/2 v:-translate-y-1/2 merge-h:left-auto merge-h:translate-x-1/2 merge-v:top-auto merge-v:-translate-x-4 slider-disabled:border-gray-400 slider-disabled:bg-gray-400 tt-focus:hidden tt-focused:block tt-drag:hidden tt-dragging:block absolute block transform whitespace-nowrap rounded border border-blue-400 px-1.5 py-1 text-center text-xs font-medium text-white;
 }
 .slider-tooltip-top {
   @apply h:arrow-bottom merge-h:bottom-3.5 bottom-6;

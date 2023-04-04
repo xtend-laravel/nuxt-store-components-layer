@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import useProductRoute from '#nuxt-store-core/composables/useProductRoute'
+import useProductRoute from 'nuxt-store-core-app/src/composables/useProductRoute'
 
 const props = defineProps<{
   item: any
@@ -14,7 +14,7 @@ const formattedDiscountedPrice = formatPrice(basePrice, 50, 100)
 </script>
 
 <template>
-  <div class="group aspect-1 flex-1">
+  <div class="aspect-1 group flex-1">
     <NuxtLink class="relative block flex h-full w-full items-center justify-center overflow-hidden" :to="url">
       <!-- main image -->
       <img
@@ -32,7 +32,7 @@ const formattedDiscountedPrice = formatPrice(basePrice, 50, 100)
 
       <!-- information -->
       <div
-        class="absolute top-0 left-0 flex h-full w-full flex-col items-center justify-center bg-neutral-900/30 px-4 transition duration-300 lg:-translate-y-full lg:group-hover:translate-y-0"
+        class="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center bg-neutral-900/30 px-4 transition duration-300 lg:-translate-y-full lg:group-hover:translate-y-0"
       >
         <h3 class="mb-2 text-center text-sm font-medium text-white" v-text="item.name.en" />
 
@@ -46,7 +46,7 @@ const formattedDiscountedPrice = formatPrice(basePrice, 50, 100)
             </div>
           </template>
           <!-- price -->
-          <span class="font-medium text-white text-brand-500" v-text="formattedDiscountedPrice" />
+          <span class="text-brand-500 font-medium text-white" v-text="formattedDiscountedPrice" />
         </div>
       </div>
     </NuxtLink>

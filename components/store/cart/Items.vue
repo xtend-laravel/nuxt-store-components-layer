@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
-import { useCartStore } from '#nuxt-store-core/store/cart'
+import { useCartStore } from 'nuxt-store-core-app/src/store/cart'
 import { useExtendedCartStore } from '~/store/cart'
 const cartStore = useExtendedCartStore()
 const { isCartEmpty, items, totals } = useCartStore()

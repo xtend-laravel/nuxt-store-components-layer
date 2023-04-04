@@ -2,7 +2,7 @@
 import { storeToRefs } from 'pinia'
 import { Collapse } from 'vue-collapsed'
 import Nav from './Nav.vue'
-import { useCheckoutStore } from '#nuxt-store-core/store/checkout'
+import { useCheckoutStore } from 'nuxt-store-core-app/src/store/checkout'
 defineProps<{
   step: any
   currentStep: number
@@ -21,7 +21,7 @@ const handleAccordion = (step: any): void => {
 <template>
   <Collapse
     :when="currentStep === step.index"
-    class="v-collapse overflow-hidden !px-10 !pt-4 !pb-10 text-sm text-gray-500"
+    class="v-collapse overflow-hidden !px-10 !pb-10 !pt-4 text-sm text-gray-500"
     :class="{ '!h-full': step.key === 'payment_method' && currentStep === 5 }"
   >
     <Component :is="step.component" :key="step.key" :current-step-key="step.key" />

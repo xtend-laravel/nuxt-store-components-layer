@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useFilterStore } from '#nuxt-store-core/store/filters'
+import { useFilterStore } from 'nuxt-store-core-app/src/store/filters'
 const props = defineProps<{
   brands: any
 }>()

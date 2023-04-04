@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import debounce from 'lodash.debounce'
-import { useAuthStore } from '#nuxt-store-core/store/auth'
-import { useCheckoutStore } from '#nuxt-store-core/store/checkout'
+import { useAuthStore } from 'nuxt-store-core-app/src/store/auth'
+import { useCheckoutStore } from 'nuxt-store-core-app/src/store/checkout'
 const checkoutStore = useCheckoutStore()
 const hasAccount = ref(false)
 const emailIsValid = ref(false)
@@ -143,7 +143,7 @@ watch([() => form.email, () => form.password], ([email, password]) => {
           v-model="form.email"
           type="email"
           placeholder="Email address"
-          class="focus:ring-shadow-none w-full rounded-lg border border-2 border-brand-500 px-3 py-2 font-medium placeholder:font-normal focus:border-brand-500 focus:outline-none focus:ring-0 md:px-4 md:py-3"
+          class="focus:ring-shadow-none border-brand-500 focus:border-brand-500 w-full rounded-lg border border-2 px-3 py-2 font-medium placeholder:font-normal focus:outline-none focus:ring-0 md:px-4 md:py-3"
         />
         <div v-if="form.errors.email" class="mt-1 text-red-600" v-text="form.errors.email" />
       </div>
@@ -153,7 +153,7 @@ watch([() => form.email, () => form.password], ([email, password]) => {
           v-model="form.password"
           type="password"
           placeholder="Password"
-          class="focus:ring-shadow-none w-full rounded-lg border border-2 border-brand-500 px-3 py-2 font-medium placeholder:font-normal focus:border-brand-500 focus:outline-none focus:ring-0 md:px-4 md:py-3"
+          class="focus:ring-shadow-none border-brand-500 focus:border-brand-500 w-full rounded-lg border border-2 px-3 py-2 font-medium placeholder:font-normal focus:outline-none focus:ring-0 md:px-4 md:py-3"
         />
         <div v-if="form.errors.password" class="mt-2 text-red-500" v-text="form.errors.password" />
       </div>
@@ -164,12 +164,12 @@ watch([() => form.email, () => form.password], ([email, password]) => {
           <input
             type="text"
             placeholder="First name"
-            class="focus:ring-shadow-none w-full rounded-lg border border-2 border-brand-500 px-3 py-2 font-medium placeholder:font-normal focus:border-brand-500 focus:outline-none focus:ring-0 md:px-4 md:py-3"
+            class="focus:ring-shadow-none border-brand-500 focus:border-brand-500 w-full rounded-lg border border-2 px-3 py-2 font-medium placeholder:font-normal focus:outline-none focus:ring-0 md:px-4 md:py-3"
           />
           <input
             type="text"
             placeholder="Last name"
-            class="focus:ring-shadow-none w-full rounded-lg border border-2 border-brand-500 px-3 py-2 font-medium placeholder:font-normal focus:border-brand-500 focus:outline-none focus:ring-0 md:px-4 md:py-3"
+            class="focus:ring-shadow-none border-brand-500 focus:border-brand-500 w-full rounded-lg border border-2 px-3 py-2 font-medium placeholder:font-normal focus:outline-none focus:ring-0 md:px-4 md:py-3"
           />
         </div>
       </div>
@@ -178,7 +178,7 @@ watch([() => form.email, () => form.password], ([email, password]) => {
           :id="form.toc"
           v-model="form.toc"
           type="checkbox"
-          class="focus:ring-shadow-none h-4 w-4 rounded-lg border border-brand-500 focus:border-brand-500 focus:outline-none focus:ring-0"
+          class="focus:ring-shadow-none border-brand-500 focus:border-brand-500 h-4 w-4 rounded-lg border focus:outline-none focus:ring-0"
         />
         <label :for="form.toc" class="text-sm text-neutral-500">
           I agree to the <a href="#" class="text-brand-500">terms and conditions</a>
@@ -186,13 +186,13 @@ watch([() => form.email, () => form.password], ([email, password]) => {
       </div>
       <button
         :disabled="disableAction"
-        class="flex flex-none items-center justify-center rounded-lg bg-brand-500 px-3 py-2 font-medium text-white hover:bg-brand-600 disabled:cursor-not-allowed disabled:hover:bg-brand-500 md:px-4 md:py-3"
+        class="bg-brand-500 hover:bg-brand-600 disabled:hover:bg-brand-500 flex flex-none items-center justify-center rounded-lg px-3 py-2 font-medium text-white disabled:cursor-not-allowed md:px-4 md:py-3"
         v-text="buttonLabel"
       />
       <div class="flex items-center justify-center">
-        <span class="w-full border border-brand-500" />
+        <span class="border-brand-500 w-full border" />
         <span class="px-4">Or</span>
-        <span class="w-full border border-brand-500" />
+        <span class="border-brand-500 w-full border" />
       </div>
       <div class="flex flex-wrap justify-center gap-2">
         <button class="inline-flex items-center space-x-2 rounded bg-blue-500 p-2 font-semibold text-white">
